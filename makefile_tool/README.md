@@ -22,14 +22,14 @@
 ```
 ### Makefile分类
 - 顶层目录的Makefile
-  - 设置编译工具,可执行文件,子目录。
+  - 设置编译工具,可执行文件,子目录
 - 顶层目录的Makefile.build
   - 通用makefile,每个编译都会调用
 - 子目录的Makefile
-  - `obj-y += file.o` 表示把当前目录下的file.c编进程序里，
-  - `obj-y += subdir/` 表示要进入subdir这个子目录下去寻找文件来编进程序里，是哪些文件由subdir目录下的Makefile决定。
-  - `EXTRA_CFLAGS` 它给当前目录下的所有文件(不含其下的子目录)设置额外的编译选项, 可以不设置
-  - `CFLAGS_xxx.o` 它给当前目录下的xxx.c设置它自己的编译选项, 可以不设置
+  - `obj-y += file.o` 表示把当前目录下的file.c编进程序里。
+  - `obj-y += subdir/` 表示进入subdir子目录去编进,编译哪些文件由subdir目录下的Makefile决定。
+  - `EXTRA_CFLAGS` 当前目录所有文件(不含子目录)额外的编译选项, 可以不设置
+  - `CFLAGS_xxx.o` 当前目录下的xxx.c设置它自己的编译选项, 可以不设置
   - 子目录最后的'/'不能省略
 
 ### Makefile.build分析
@@ -37,15 +37,15 @@
 PHONY := __build
 __build:
 
-obj-y :=
-subdir-y :=
+obj-y        :=
+subdir-y     :=
 EXTRA_CFLAGS :=
 
 include Makefile
 
 # 获取子目录的名称,并去掉目录名称最后的‘/’
 __subdir-y	:= $(patsubst %/,%,$(filter %/, $(obj-y)))
-subdir-y	+= $(__subdir-y)
+subdir-y    += $(__subdir-y)
 # 获取每个子目录里面的built-in.o文件
 subdir_objs := $(foreach f,$(subdir-y),$(f)/built-in.o)
 

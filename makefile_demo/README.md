@@ -10,4 +10,4 @@
 ├── Makefile
 └── README.md
 ```
-详细说明见Makefile注释
+详细说明见[Makefile](./Makefile)注释

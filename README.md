@@ -1,5 +1,8 @@
-Makefile学习笔记
-### [GNU Make Manual](https://www.gnu.org/software/make/manual/)
+## Makefile学习笔记
+
+### GNU make文档
+* [GNU Make Manual](https://www.gnu.org/software/make/manual/)
 * GNU make Manual阅读笔记, Todo
-### [makefile demo](./makefile_demo/Makefile)
+
+### Makefile测试
 * [简单的makefile测试](./makefile_demo/README.md)

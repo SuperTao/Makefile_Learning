@@ -8,4 +8,4 @@
 - 写个简单的[Makefile](./makefile_demo/)测试。
 
 ### Makefile tool
-- 整理一份通用[Makefile](./makefile_too/)，用于编译代码。
+- 整理一份通用[Makefile](./makefile_tool/)，用于编译代码。

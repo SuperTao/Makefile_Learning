@@ -6,3 +6,6 @@
 
 ### Makefile测试
 * [简单的makefile测试](./makefile_demo/README.md)
+
+### 通用Makefile
+* [通用makefile分析](./makefile_tool/README.md)

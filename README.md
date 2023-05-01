@@ -1,11 +1,11 @@
 ## Makefile学习笔记
 
 ### GNU make文档
-* [GNU Make Manual](https://www.gnu.org/software/make/manual/)
-* GNU make Manual阅读笔记, Todo
+- [GNU Make Manual](https://www.gnu.org/software/make/manual/)
+- GNU make Manual阅读笔记, Todo
 
-### Makefile测试
-* [简单的makefile测试](./makefile_demo/README.md)
+### Makefile demo
+- 写个简单的[makefile](./Makefile_demo/)测试。
 
-### 通用Makefile
-* [通用makefile分析](./makefile_tool/README.md)
+### Makefile tool
+- 整理一份通用[makefile](./Makefile_too/)，用于编译代码。

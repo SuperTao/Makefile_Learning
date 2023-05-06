@@ -234,8 +234,8 @@ sets ‘frobozz’ to ‘no’.
 
 ### 8.2 Functions for String Substitution and Analysis
 - patsubst函数
-`$(patsubst pattern,replacement,text)`
-使用$(var:pattern=replacement)的方式替换$(patsubst)函数
+  - `$(patsubst pattern,replacement,text)`
+  - 使用`$(var:pattern=replacement)`的方式替换`$(patsubst)`函数
 
 ```
 Substitution references (see Section 6.3.1 [Substitution References], page 69)
@@ -358,11 +358,11 @@ main:
 
 ### 8.13 Functions That Control Make
 - error,致命错误,打印行号,退出
-  `$(error text...)`
+  - `$(error text...)`
 - warning,会打印行号,不退出
-  `$(warning text...)
+  - `$(warning text...)`
 - info
-  `$(info text...)`
+  - `$(info text...)`
 
 ### 8.14 The shell Function
 makefile中export的变量，将会传给shell。引用时需要用`$$`

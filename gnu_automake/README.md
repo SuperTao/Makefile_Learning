@@ -49,9 +49,8 @@
 	src/Makefile
   ])
   AC_OUTPUT
-```
-
-# auforeconf --install
+  ```
+# autoreconf --install
 使用Autotools创建编译系统的实例。`autoreconf --install`	
 ```
 tao@T:~/temp/hello$ autoreconf --install

@@ -1,4 +1,7 @@
 # GNU automake
+- Automake是为了简化编写复杂Makefile而设计的。
+- 通过Makefile.am文件，生成Makefile.in文件。
+- Makefile.in文件包含了很多的make变量，兼容GNU make的标准
 
 # hello world
 在空目录里面创建以下文件.

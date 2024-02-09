@@ -1,6 +1,7 @@
 ### 目录结构
 
 参考wpa_supplicant的makefile写一个demo
+```
 .
 ├── README
 ├── src
@@ -20,6 +21,7 @@
     ├── Makefile
     ├── defconfig
     └── main.c
+```
 
 ### 分析
 
